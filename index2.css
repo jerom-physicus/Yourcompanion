@@ -86,9 +86,10 @@ body{
         background: rgba(255, 59, 59, 0.87);
     }
     .content2 div h1{
-        
+        position: relative;
         color: #FFF;
-        font-size: 30px;
+        font-size: 25px;
+        padding: 30px;
        
     }
 
@@ -122,7 +123,7 @@ body{
     .guide{
         position: absolute;
         left: 4%;
-        top: 60vh;
+        top: 57vh;
         width: 80%;
         height: 46px;   
         border-radius: 20px;
@@ -131,6 +132,7 @@ body{
     }
     .guidePlus{
         width: 94%;
+        padding: 2px -20px;
     left: 3%;
     position: relative;
     top: 5px;
@@ -144,7 +146,7 @@ body{
     }
     .plus{
         position: absolute;
-        top: 60vh;
+        top: 57vh;
         left: 93%;
         width: 50px;
         height: 50px;

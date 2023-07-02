@@ -59,7 +59,7 @@ onValue(ref(db,"user"+username),function(snapshot){
 function info(element){
   let infobox = document.createElement("div")
   let infobox_title = document.createElement("h1")
-  infobox_title.innerHTML = 'element'
+  infobox_title.innerHTML = element
   content2.append(infobox)
   infobox.append(infobox_title)
 }
