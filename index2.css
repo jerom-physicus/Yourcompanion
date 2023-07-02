@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700;1,900&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&family=Prompt&family=Roboto:wght@100&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ body{
         text-align: center;
         text-shadow: 0px 4px 7px 0px rgba(137, 0, 0, 0.43);
         font-size: 48px;
-        font-family: Forte;
+        font-family: Kaushan Script;
         font-style: normal;
         text-decoration: underline;
         text-decoration-color: red;
@@ -96,7 +96,8 @@ body{
     }
     .guide{
         position: relative;
-        top: 29vh;
+        left: 2%;
+        top: 26vh;
         width: 80%;
         height: 46px;   
         border-radius: 20px;
