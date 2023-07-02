@@ -84,9 +84,11 @@ function info(titledb,discription ){
   content2.append(infobox)
   infobox.append(infobox_title)
   infobox.append(infobox_discription)
-  infobox.addEventListener('dblclick',function(){
-    remove(ref(db,"user"+username+`/${titledb}/`))
+  infobox.addEventListener('click',function(){
+    localStorage.setItem('title',titledb)
+    window.location.href = 'index3.html'
   })
+  
 
 }
 

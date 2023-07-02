@@ -92,12 +92,15 @@ body{
     }
     .content2 div h1{
         position: relative;
-        
         color: #FFF;
         font-size: 25px;
         padding: 14px;
+        padding-bottom: 0px;
        
     }
+    ::-webkit-scrollbar {
+        display: none;
+      }
     .content2 div p{
         position: relative;
         
