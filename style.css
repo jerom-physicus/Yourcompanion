@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700;1,900&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&family=Prompt&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins";
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 110vh;
+    overflow-x: hidden;
+    background: linear-gradient(177deg, #FFF 0%, #FCC 52.60%, #FF4C4C 99.99%, rgba(255, 0, 0, 0.15) 100%);
+}
+.sub-logo{
+    color: #F00;
+    position: relative;
+    text-align: center;
+    left: -24vh;
+    top: 10vh;
+    text-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.36);
+    font-size: 77px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+.logo{
+    color: #000;
+    left: 34vh;
+    top: 7vh;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 4px 7px 0px rgba(137, 0, 0, 0.43);
+    font-size: 80px;
+    font-family: Forte;
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+@media only screen and (max-width: 600px){
+    .header{
+        position: relative;
+    left: -4vh;
+    top: 3vh;
+    }
+     .sub-logo{
+        position: relative;
+        left: 8%;
+        top: 0vh;
+        color: #F00;
+        text-align: center;
+        text-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.36);
+        font-size: 36px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.18px;
+    }
+    .logo{
+        position: relative;
+        left: 7%;
+        top: -3vh;
+        color: #000;
+        text-align: center;
+        text-shadow: 0px 4px 7px 0px rgba(137, 0, 0, 0.43);
+        font-size: 48px;
+        font-family: Kaushan Script;
+        font-style: normal;
+        text-decoration: underline;
+        text-decoration-color: red;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+    .cloud{
+        position: absolute;
+        width: 260px;
+        top: 110px;
+    }
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 110vh;
+        background: linear-gradient(177deg, #FFF 0%, #FCC 52.60%, #e30000 99.99%, rgba(255, 0, 0, 0.492) 100%);
+    }
+    .genie{
+        width: 355px;
+        position: relative;
+        height: fit-content;
+        top: 125px;
+        left: 0%;
+    }
+    p{
+        position: absolute;
+        display: flex;
+    top: 145px;
+    left: 47px;
+    z-index: 1;
+    width: 159px;
+    height: 94px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.075px;
+    }
+    .btns{
+        position: absolute;
+        top: 559px;
+        left: -35px;
+        display: flex;
+        flex-direction: row;
+        width: 115%;
+    }
+    .login-btn{
+        position: relative;
+        left: 15%;
+        display: flex;
+        width: 141px;
+        height: 43px;
+        padding: 9px 22px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 11px;
+        color: white;
+        font-weight: 500;
+        font-size: 19px;
+        border-style: none;
+        background: #242424;
+        box-shadow: 0px 4px 33px 3px rgba(2, 0, 0, 0.46);
+    }
+    .continue-btn{
+        position: relative;
+        left: 20%;
+        display: flex;
+        height: 43px;
+        width: 141px;
+        padding: 11px 22px 7px 22px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+        background: #FFF;
+        border-style: none;
+        color: #ff0000;
+        font-weight: 500;
+        font-size: 19px;
+        box-shadow: 0px 4px 23px 0px rgba(111, 0, 0, 0.49);
+    }
+ 
+
+    
+    
+}
+    
+    
