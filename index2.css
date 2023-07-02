@@ -51,7 +51,7 @@ body{
     }
     .content{
         position: relative;
-        width: 120%;
+        width: 100%;
         top: 50px;
         height: 99vh;
         border-radius: 37px;
@@ -96,19 +96,19 @@ body{
     }
     .guide{
         position: relative;
+        top: 29vh;
         width: 80%;
-        height: 40px;
-        top: 100vh;
-        border-radius: 22px;
-        background: #FFF;
+        height: 46px;   
+        border-radius: 20px;
+        background: #ffffff;
         box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.57);
     }
     .plus{
         position: relative;
-        top: -70px;
-        left: 50%;
-        width: 160px;
-        height: 160px;
+        top: 139px;
+        left: 93%;
+        width: 60px;
+        height: 60px;
         transform: translate(-50%);
         flex-shrink: 0;
         border-radius: 50%;

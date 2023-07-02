@@ -55,3 +55,8 @@ document.getElementById('login').addEventListener('click',function(){
         // ...
     });
 })
+
+document.getElementById('continue-btn').addEventListener('click',function(){
+    console.log("hello")
+    window.location.href = 'index2.html'
+})
