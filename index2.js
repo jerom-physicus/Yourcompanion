@@ -25,10 +25,10 @@ const data = ref(db,"user/")
 
 var date = new Date();
 var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-console.log(current_date)
+//console.log(current_date)
 var date = new Date();
 	var current_time = date.getHours()+":"+date.getMinutes()
-	console.log(current_time) 
+	//console.log(current_time) 
 
 document.getElementById('createBtn').addEventListener('click',function(){
     let title = document.getElementById('title').value
@@ -44,24 +44,50 @@ document.getElementById('createBtn').addEventListener('click',function(){
 
 })
 onValue(ref(db,"user"+username),function(snapshot){
+  content2.innerHTML = ""
   let dbtitle = Object.keys(snapshot.val('title'))
-  //console.log(dbtitle)
+  let keys = Object.entries(snapshot.val('title'))
+  
+  console.log(keys[1])
   for (let i = 0; i < dbtitle.length; i++) {
-    globalThis.element = dbtitle[i];
-    console.log(element)
+    globalThis.titledb = dbtitle[i];
+    //console.log(titledb)
+    
+
+    onValue(ref(db,"user"+username+`/${titledb}`),function(snapshot){
+      let dbdis = Object.values(snapshot.val('discription'))
+      console.log(dbdis[1])
+      let discription = dbdis[1]
+      info(titledb,discription)
+      
+        
+      
+    
+    })
     
   }
-  info(element)
+  
+  
+
 
 
 })
 
-function info(element){
+
+
+function info(titledb,discription ){
   let infobox = document.createElement("div")
   let infobox_title = document.createElement("h1")
-  infobox_title.innerHTML = element
+  let infobox_discription = document.createElement("p")
+  infobox_title.innerHTML = titledb
+  infobox_discription.textContent = discription
   content2.append(infobox)
   infobox.append(infobox_title)
+  infobox.append(infobox_discription)
+  infobox.addEventListener('dblclick',function(){
+    remove(ref(db,"user"+username+`/${titledb}/`))
+  })
+
 }
 
 
