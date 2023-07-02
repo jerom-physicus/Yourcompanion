@@ -7,14 +7,14 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstati
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyB863tyOJ-LAcBX-SrejyXEFzv0Zm3vfHg",
-    authDomain: "blueloop-app.firebaseapp.com",
-    databaseURL: "https://blueloop-app-default-rtdb.firebaseio.com",
-    projectId: "blueloop-app",
-    storageBucket: "blueloop-app.appspot.com",
-    messagingSenderId: "733652313578",
-    appId: "1:733652313578:web:603e8e1f7ecde3cf063e93"
-  };
+  apiKey: "AIzaSyBofwhquW437EuGRfL7z5yXLz4zgPxBaIg",
+  authDomain: "your-companion-73a01.firebaseapp.com",
+  projectId: "your-companion-73a01",
+  storageBucket: "your-companion-73a01.appspot.com",
+  messagingSenderId: "686996366341",
+  appId: "1:686996366341:web:d7588e31b423b52323e86c",
+  measurementId: "G-KXXHY5V128"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -23,17 +23,46 @@ let username = localStorage.getItem('username')
 const data = ref(db,"user/")
 
 
+var date = new Date();
+var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+console.log(current_date)
+var date = new Date();
+	var current_time = date.getHours()+":"+date.getMinutes()
+	console.log(current_time) 
+
 document.getElementById('createBtn').addEventListener('click',function(){
     let title = document.getElementById('title').value
     let discription = document.getElementById('description').value
-    set(ref(db,"user"+username), {
+    set(ref(db,"user"+username +`/${title}`), {
         title:title,
         discription:discription,
+        data: current_date,
+        time: current_time
     
        
       });
 
 })
+onValue(ref(db,"user"+username),function(snapshot){
+  let dbtitle = Object.keys(snapshot.val('title'))
+  //console.log(dbtitle)
+  for (let i = 0; i < dbtitle.length; i++) {
+    globalThis.element = dbtitle[i];
+    console.log(element)
+    
+  }
+  info(element)
+
+
+})
+
+function info(element){
+  let infobox = document.createElement("div")
+  let infobox_title = document.createElement("h1")
+  infobox_title.innerHTML = 'element'
+  content2.append(infobox)
+  infobox.append(infobox_title)
+}
 
 
 
