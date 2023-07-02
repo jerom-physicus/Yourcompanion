@@ -23,6 +23,7 @@ body{
     .header{
         display: flex;
         flex-direction: row;
+        top: 10px;
         width: 100%;
         position: relative;
         height: 60px;
@@ -63,8 +64,8 @@ body{
         transform: rotate(0.012deg);
     }
     .footer{
-        position: relative;
-        top: -30vh;
+        position: fixed;
+        bottom: 0;
         width: 100%;
         height: 83px;
         border-radius: 10px 10px 0px 0px;
