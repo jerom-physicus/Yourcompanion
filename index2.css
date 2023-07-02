@@ -17,9 +17,12 @@ body{
     background: linear-gradient(180deg, #EB0000 0%, #FFF 19.06%, #FFF 85.73%, #FFF 85.74%);
 }
 @media only screen and (max-width : 600px){
+    body{
+        overflow-y: hidden;
+    }
     .header h1 {
         position: relative;
-        width: 90%;
+        width: 94%;
         top: 5vh;
         left: 5%;
         color: #FFF;
@@ -107,7 +110,7 @@ body{
     }
     .plus{
         position: relative;
-        top: 139px;
+        top: 122px;
         left: 93%;
         width: 60px;
         height: 60px;
