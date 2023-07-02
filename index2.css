@@ -19,7 +19,9 @@ body{
 @media only screen and (max-width : 600px){
     .header h1 {
         position: relative;
+        width: 90%;
         top: 5vh;
+        left: 5%;
         color: #FFF;
         text-align: center;
         text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
@@ -42,10 +44,9 @@ body{
         text-shadow: 0px 4px 7px 0px rgba(137, 0, 0, 0.43);
         font-size: 48px;
         font-family: Kaushan Script;
-        font-style: normal;
         text-decoration: underline;
         text-decoration-color: red;
-        font-weight: 400;
+        font-weight: 500;
         line-height: normal;
         letter-spacing: 0.24px;
     }
@@ -97,7 +98,7 @@ body{
     .guide{
         position: relative;
         left: 2%;
-        top: 26vh;
+        top: 24vh;
         width: 80%;
         height: 46px;   
         border-radius: 20px;
